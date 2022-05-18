@@ -64,10 +64,8 @@ body{
     box-shadow: 1px 1px rgb(119, 124, 143);
     margin: 3px;
     padding: 10px;
-    animation: animate__shakeY;
+    animation: shakeX   ;
     animation-duration: 1s;
-    animation: bounce;
-    animation-duration: 2s;
 
  }
 
@@ -429,3 +427,8 @@ footer{
     }
 }
 
+
+nav ul li:hover{
+    animation: animate__hinge;
+    animation-duration: 2s;
+}
