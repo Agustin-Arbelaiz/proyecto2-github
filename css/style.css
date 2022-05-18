@@ -31,6 +31,8 @@ body{
     display: flex;
     justify-content: center; 
     width: 7%;
+    animation: bounceIn;
+    animation-duration: 5s;
 
 }
 
@@ -62,6 +64,10 @@ body{
     box-shadow: 1px 1px rgb(119, 124, 143);
     margin: 3px;
     padding: 10px;
+    animation: animate__shakeY;
+    animation-duration: 1s;
+    animation: bounce;
+    animation-duration: 2s;
 
  }
 
@@ -173,6 +179,8 @@ footer{
     text-align: center;
     font-size: 4rem;
     font-family: 'Trispace', sans-serif;
+    animation: shakeY;
+    animation-duration: 2s;
 }
 
 .estilos{
@@ -295,8 +303,7 @@ footer{
     margin:40px ;
     padding: 20px;
     width: 560px;
-    border: 10px;
-   
+    border: 10px; 
 }
 
 /* estilos html bar*/
@@ -421,3 +428,4 @@ footer{
         width: 60%;
     }
 }
+
