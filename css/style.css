@@ -36,6 +36,19 @@ body{
 
 }
 
+.bg-propio{
+    background-color: rgba(246, 154, 7, 0.951);
+    
+}
+
+.nav-item a{
+    color: beige;
+}
+
+.nav-item a:hover{
+    opacity: 70%;
+}
+
 .navegador{
     display: flex;
     justify-content: flex-end;
@@ -432,3 +445,4 @@ nav ul li:hover{
     animation: animate__hinge;
     animation-duration: 2s;
 }
+
