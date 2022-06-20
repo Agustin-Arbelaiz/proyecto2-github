@@ -3,8 +3,9 @@
 
 .main-bar {
     @include flexColumn;
+    @extend %fondo;
 
-    div {
+    h1 {
         @extend %estilo-titulo;
     }
 

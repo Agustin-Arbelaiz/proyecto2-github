@@ -1,81 +1,73 @@
 /* estilos html estilos*/
 
 @import "../utilities/extend";
-@import  "../utilities/mixin";
+@import "../utilities/mixin";
 
-.titulo {
-   @extend %estilo-titulo ;
-}
-
-.estilos {
-    display: grid;
-    grid-template-areas:"imagen1 imagen2"
-                        "t1      t2"
-                         "imagen3 imagen4"
-                        "t3      t4"
-                         "imagen5 imagen6"
-                        "t5      t6";
-    align-items: center;
-    justify-content: center;
-    margin-left: 4rem;
-    padding: 1rem;
+main {
+   @extend %fondo;
+   .titulo {
+      @extend %estilo-titulo;
+   }
 
 
-    .golden {
-        grid-area: imagen1;
-        width: 60%;
-    }
+display: flex;
+flex-direction: column;
+align-items: center;
 
-    .honey {
-        grid-area: imagen2;
-        width: 60%;
-    }
 
-    .imperial {
-        grid-area: imagen3;
-        width: 60%;
-    }
 
-    .jammin {
-        grid-area: imagen4;
-        width: 60%;
-    }
+   .estilos {
+      display: grid;
+      grid-template-areas: "titulo titulo"
+         "img parrafo"
+         "descriptores descriptores";
 
-    .sour {
-        grid-area: imagen5;
-        width: 60%;
-    }
+      width: 80%;
+      margin: 15px;
+      height: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 6px;
+      inset: 0 0 6px;
 
-    .wilds {
-        grid-area: imagen6;
-        width: 60%;
-    }
+      h2 {
+         grid-area: titulo;
+         @extend %estilo-titulo2;
+      }
 
-    .d1 {
-        grid-area: t1;
-        @extend %estilo-texto;
-    }
+      p {
+         grid-area: parrafo;
+         color: white;
+         margin: 5px;
 
-    .d2 {
-        grid-area: t2;
-        @extend %estilo-texto;
-    }
-    .d3 {
-        grid-area: t3;
-        @extend %estilo-texto;
-    }
+      }
 
-    .d4 {
-        grid-area: t4;
-        @extend %estilo-texto;
-    }
+      img {
+         grid-area: img;
+         width: auto;
+         height: auto;
+      }
 
-    .d5 {
-        grid-area: t5;
-        @extend %estilo-texto;
-    }
-    .d6 {
-        grid-area: t6;
-        @extend %estilo-texto;
-    }
+      .descriptores {
+         grid-area: descriptores;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         .ibu {
+            @extend %estilo-texto;
+         }
+
+         .alcohol {
+            @extend %estilo-texto;
+         }
+
+         &:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+
+
+         }
+
+      }
+   }
 }

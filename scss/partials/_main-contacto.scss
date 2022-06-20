@@ -4,7 +4,7 @@
 
 .contacto {
     @include flexColumn;
-
+    @extend %fondo;
     h1 {
         @extend %estilo-titulo;
     }
@@ -31,5 +31,6 @@
         margin-top: 20px;
         border-radius: 10px;
         font-size: 30px;
+        margin-bottom: 10px ;
     }
 }
