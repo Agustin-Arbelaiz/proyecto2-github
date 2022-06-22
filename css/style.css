@@ -26,7 +26,7 @@ main .estilos .descriptores .ibu, main .estilos .descriptores .alcohol {
   color: white;
   width: 40%; }
 
-.main-bar, .contacto, main, .div-fabrica, .main-index {
+.contacto, main, .div-fabrica, .main-index {
   background-color: #ac1a2d;
   background: linear-gradient(0deg, #ac1a2d 0%, rgba(253, 103, 27, 0.880287) 100%);
   min-height: 100vh; }
@@ -55,7 +55,7 @@ main .estilos .descriptores .ibu, main .estilos .descriptores .alcohol {
   color: white;
   width: 40%; }
 
-.main-bar, .contacto, main, .div-fabrica, .main-index {
+.contacto, main, .div-fabrica, .main-index {
   background-color: #ac1a2d;
   background: linear-gradient(0deg, #ac1a2d 0%, rgba(253, 103, 27, 0.880287) 100%);
   min-height: 100vh; }
@@ -63,19 +63,39 @@ main .estilos .descriptores .ibu, main .estilos .descriptores .alcohol {
 .main-bar {
   display: flex;
   flex-direction: column;
-  align-items: center; }
-  .main-bar img {
-    margin-top: 20px;
-    padding: 20px; }
+  align-items: center;
+  background-image: url("../images/fondobar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%; }
   .main-bar p {
-    text-align: justify;
+    text-align: center;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.8;
     color: white;
+    width: 60%;
     margin: 40px;
     padding: 30px;
-    width: 550px;
+    border-radius: 2%;
+    font-size: 1rem; }
+  .main-bar iframe {
+    width: 60%;
+    height: 80%; }
+  .main-bar .horarios {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    font-size: 1rem;
+    margin-top: 5%;
     border-radius: 2%; }
+  .main-bar a {
+    display: flex;
+    justify-content: center; }
+    .main-bar a img {
+      width: 20%;
+      border-radius: 100%; }
 
 .main-bar h1, .contacto h1, main .titulo {
   background-color: black;
@@ -101,7 +121,7 @@ main .estilos .descriptores .ibu, main .estilos .descriptores .alcohol {
   color: white;
   width: 40%; }
 
-.main-bar, .contacto, main, .div-fabrica, .main-index {
+.contacto, main, .div-fabrica, .main-index {
   background-color: #ac1a2d;
   background: linear-gradient(0deg, #ac1a2d 0%, rgba(253, 103, 27, 0.880287) 100%);
   min-height: 100vh; }
@@ -155,7 +175,7 @@ main .estilos .descriptores .ibu, main .estilos .descriptores .alcohol {
   color: white;
   width: 40%; }
 
-.main-bar, .contacto, main, .div-fabrica, .main-index {
+.contacto, main, .div-fabrica, .main-index {
   background-color: #ac1a2d;
   background: linear-gradient(0deg, #ac1a2d 0%, rgba(253, 103, 27, 0.880287) 100%);
   min-height: 100vh; }
@@ -187,7 +207,8 @@ main {
       grid-area: descriptores;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      margin-left: 40%; }
       main .estilos .descriptores:hover {
         transform: scale(1.1);
         transition: 0.2s; }
@@ -207,7 +228,8 @@ main {
     padding: 20px;
     width: 50%;
     border: 10px;
-    height: 60%; }
+    max-height: 30vh;
+    overflow: scroll; }
 
 /*estilos navbar*/
 .encabezado {
@@ -232,31 +254,31 @@ main {
       opacity: 70%; }
 
 /*estilos body index*/
-.main-index h1 {
-  color: white;
-  text-align: center;
-  font-family: 'Trispace', sans-serif;
+.main-index .titles {
   background-color: black;
-  opacity: 0.8;
-  font-size: 4rem; }
-
-.main-index h2 {
-  grid-area: titulo2;
-  color: white;
-  text-align: center;
-  font-family: 'Trispace', sans-serif;
-  background-color: black;
-  grid-area: titulo2;
-  color: white;
-  text-align: center;
-  font-size: 3rem; }
+  opacity: 0.8; }
+  .main-index .titles h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 4rem; }
+  .main-index .titles h2 {
+    grid-area: titulo2;
+    color: white;
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    grid-area: titulo2;
+    color: white;
+    text-align: center;
+    font-size: 3rem; }
 
 .main-index .divisor {
   display: grid;
-  grid-template-areas: "img texto"; }
+  grid-template-areas: "img texto";
+  align-items: center; }
   .main-index .divisor img {
     grid-area: img;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
     margin-right: 10%;
@@ -264,13 +286,12 @@ main {
   .main-index .divisor p {
     grid-area: texto;
     justify-self: center;
-    background-color: black;
-    opacity: 0.5;
     color: white;
     margin-left: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-right: 10%; }
+    margin-right: 10%;
+    font-size: 1.5rem; }
 
 /* estilo footer*/
 footer {

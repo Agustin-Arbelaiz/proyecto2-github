@@ -52,53 +52,57 @@
 
     @extend %fondo;
 
-    h1 {
-        color: white;
-        text-align: center;
-        font-family: 'Trispace', sans-serif;
+    .titles {
         background-color: black;
         opacity: 0.8;
-        font-size: 4rem;
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Trispace', sans-serif;
+            font-size: 4rem;
+        }
+
+        h2 {
+            grid-area: titulo2;
+            color: white;
+            text-align: center;
+            font-family: 'Trispace', sans-serif;
+
+            grid-area: titulo2;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+
+
+        }
     }
 
-    h2 {
-        grid-area: titulo2;
-        color: white;
-        text-align: center;
-        font-family: 'Trispace', sans-serif;
-        background-color: black;
-        grid-area: titulo2;
-        color: white;
-        text-align: center;
-        font-size: 3rem;
+    .divisor {
 
- 
-    }
+        display: grid;
+        grid-template-areas: "img texto";
+        align-items: center;
 
-.divisor{
-     
-    display: grid;
-    grid-template-areas: "img texto";
-    img {
-           grid-area: img;
-            margin-left: 30%;
+        img {
+            grid-area: img;
+            margin-left: 10%;
             margin-top: 10%;
             margin-bottom: 10%;
             margin-right: 10%;
             width: 80%;
+            
 
         }
 
         p {
             grid-area: texto;
             justify-self: center;
-            background-color: black;
-            opacity: 0.5;
             color: white;
             margin-left: 10%;
             margin-top: 10%;
             margin-bottom: 10%;
             margin-right: 10%;
+            font-size: 1.5rem;
         }
     }
 }
