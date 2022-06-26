@@ -1,9 +1,9 @@
 @import "../utilities/mixin";
-
+//estilos main fabrica
 .div-fabrica {
    @include flexColumn;
    @extend %fondo;
-
+   @import "./queries";
     .video{
         box-sizing: auto;
     }

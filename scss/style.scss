@@ -1,16 +1,18 @@
+//reset//
 * {
     margin: 0;
     padding: 0;
 }
 
-//imports
+//imports//
 @import "./utilities/variables";
 @import "./utilities/extend";
 @import "./utilities/mixin";
-@import "./partials/main-bar";
-@import "./partials/main-contacto";
-@import "./partials/main-estilos";
-@import "./partials/main-fabrica";
+@import "partials/main-bar";
+@import "partials/main-contacto";
+@import "partials/main-estilos";
+@import "partials/main-fabrica";
+
 
 
 /*estilos navbar*/
@@ -105,6 +107,7 @@
             font-size: 1.5rem;
         }
     }
+    @import "partials/queries";
 }
 
 /* estilo footer*/
@@ -135,4 +138,6 @@ footer {
     p {
         grid-area: firma;
     }
+
 }
+

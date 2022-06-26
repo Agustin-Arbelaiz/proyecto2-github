@@ -1,6 +1,8 @@
 @import "../utilities/mixin";
 @import "../utilities/extend";
 
+//estilos html bar//
+
 .main-bar {
     @include flexColumn;
     background-image: url("../images/fondobar.png");
